@@ -1,0 +1,62 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="QA Selenium Test Framework" verbose="1">
+
+    <!--<parameter name="host" value="10.22.106.103"/>-->
+    <parameter name="host" value="localhost"/>
+    <parameter name="port" value="4444"/>
+    <parameter name="browser" value="*firefox"/>
+    <parameter name="url" value="http://www.box.com/login/"/>
+
+    <!--Miscellanious parameters-->
+
+    <!--<parameter name="execSpeed" value="0"/>-->
+    <parameter name="pagetimeout" value="60000"/>
+
+
+    <!--<parameter name="ad.hostname" value="mgdad.bpos.lab.proofpoint.com"/>-->
+    <!--<parameter name="ad.user" value="administrator"/>-->
+    <!--<parameter name="ad.password" value="burger!123"/>-->
+    <!--<parameter name="users.dn" value="DC=bpos,DC=lab,DC=proofpoint,DC=com"/>-->
+    <!--<parameter name="servers.dn" value="CN=Administrative Groups,CN=First Organization,CN=Microsoft Exchange,CN=Services,CN=Configuration,DC=bpos,DC=lab,DC=proofpoint,DC=com"/>-->
+
+    <!--<parameter name="mbx.username" value="administrator@bpos.lab.proofpoint.com"/>-->
+    <!--<parameter name="mbx.credentials" value="burger!123"/>-->
+
+    <!--<parameter name="share.path" value="\\cas\share"/>-->
+    <!--<parameter name="share.domain" value="bpos"/>-->
+
+
+    <test name="Login Tests">
+        <classes>
+            <class name="com.aut.qa.test.LoginTest"/>
+        </classes>
+    </test>
+
+    <!--<test name="Navigation Tests">-->
+    <!--<classes>-->
+    <!--<class name="com.proofpoint.legalhold.tests.navigation.NavigationTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Matter Tests">-->
+    <!--<classes>-->
+    <!--<class name="com.proofpoint.legalhold.tests.matters.AddEditDeleteMattersTest"/>-->
+    <!--<class name="com.proofpoint.legalhold.tests.matters.AddCustodianTest"/>-->
+    <!--<class name="com.proofpoint.legalhold.tests.matters.LinkMatterRolesTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Search Tests" >-->
+    <!--<classes >-->
+    <!--<class name="com.proofpoint.legalhold.tests.search.SearchTests"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+    <!--<test name="Administration Tests">-->
+    <!--<classes>-->
+    <!--<class name="com.proofpoint.legalhold.tests.admin.AdministrationTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+
+</suite>

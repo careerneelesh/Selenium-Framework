@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [QA Selenium Test Framework]" parallel="false">
+  <parameter name="port" value="4444"/>
+  <parameter name="host" value="localhost"/>
+  <parameter name="browser" value="*firefox"/>
+  <parameter name="pagetimeout" value="60000"/>
+  <parameter name="url" value="http://www.box.com/login/"/>
+  <test name="Login Tests(failed)" preserve-order="false">
+    <parameter name="port" value="4444"/>
+    <parameter name="host" value="localhost"/>
+    <parameter name="browser" value="*firefox"/>
+    <parameter name="pagetimeout" value="60000"/>
+    <parameter name="url" value="http://www.box.com/login/"/>
+    <classes>
+      <class name="com.aut.qa.test.LoginTest">
+        <methods>
+          <include name="Initialize"/>
+          <include name="Close"/>
+          <include name="GuestUser2"/>
+          <include name="GuestUser4"/>
+          <include name="GuestUser3"/>
+          <include name="GuestUser6"/>
+          <include name="GuestUser5"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>
